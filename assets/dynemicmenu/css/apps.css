@@ -139,9 +139,12 @@ width: 100%;
   padding: 50px 15px; background: none;
   border: none;}
 
-.modalDialogCustom .modal-content{background: rgba(255,255,255,0.88); border: none; padding: 15px;}
+.modalDialogCustom .modal-content{background: rgba(255,255,255,0.90); border: none; padding: 15px;}
+
   
-.modalDialogCustom .closeCustom{position: absolute;top: 2px;right: 2px;background: #fff;color: #000;width: 30px;height: 30px;z-index: 999;
+.modalDialogCustom .closeCustom{position: absolute;top: 2px;right: 2px; 
+  /* background: #fff;  */ background: none;
+  color: #000;width: 30px;height: 30px;z-index: 999;
 	opacity: 1; font-size: 25px; border: none;}
 .modalCustom{padding-left:0 !important;}
 .menuSecGroup{width:100%;}
@@ -193,14 +196,54 @@ width: 100%;
   font-weight: 300;
   font-style: italic;
   background: rgba(0,0,0,.8);
-  max-width: 320px;
+  max-width: 100%;
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 0;
   font-family: 'Birthstone', cursive;}
 
 
+  .modalCustomEvent{transition: opacity 200ms ease-in-out;transform: scale(0, 0); transition: .2s ease-in-out all;}
+  .modalCustomEvent.show{transform: scale(1);}
+  .calenderEvent {
+      max-width: 100%;
+      margin:0 auto 0 auto;
+      padding:0;
+      background: none;
+      border: none; height: 100%;
+}
+.calenderEventContent{border-radius: 0;  border: none; height: 100%;  background: url("../../images/eventCalenderBg.jpg") no-repeat center center;}
+  .calenderEvent .modal-content .modal-body{position: relative; padding: 13px;}
+  .calenderEvent a.closeEvent{position: absolute; right: 10px; top: 2px;}
+.eventCalImg{border-radius: 5px; overflow: hidden; margin-bottom: 15px;}
+.calenderEvent .eventTitle{color: #2e3133;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 12px;}
+.calenderEvent .eventTitle .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .eventTitle .iconEvent i{color: #4071de;  font-size: 17px;  margin-top: 4px;}
+
+.calenderEvent .eventSubTitle {color: #525557;  font-size: 16px;  font-weight: 400;  margin-bottom: 9px;}
+.calenderEvent .eventSubTitle .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .eventSubTitle .iconEvent i{color: #525557;  font-size: 16px;  margin-top: 4px;}
+
+.calenderEvent .dateTimeevent{width: 100%; display: inline-block; margin-bottom: 7px;}
+.calenderEvent .dateTimeevent .dateEvent{width: 50%; float: left; font-size: 16px; color: #525557;}
+.calenderEvent .dateTimeevent .dateEvent .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .dateTimeevent .dateEvent .iconEvent i{color: #525557;  font-size: 16px;  margin-top: 4px;}
+
+.calenderEvent .dateTimeevent .timeEvent{width: 50%; float: left; font-size: 16px; color: #525557;}
+.calenderEvent .dateTimeevent .timeEvent .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .dateTimeevent .timeEvent .iconEvent i{color: #525557;  font-size: 16px;  margin-top: 4px;}
 
 
+.calenderEvent .eventUrl{color: #525557; font-size: 16px; font-weight: 400; margin-bottom: 6px; margin-top: -4px;}
+.calenderEvent .eventUrl .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .eventUrl .iconEvent i{color: #525557;  font-size: 16px;  margin-top: 4px;}
+
+
+.calenderEvent .eventDescription{color: #525557; font-size: 16px; font-weight: 400; margin-bottom: 0;}
+.calenderEvent .eventDescription .iconEvent{margin-right: 3px;  width: 16px;  display: inline-block;}
+.calenderEvent .eventDescription .iconEvent i{color: #525557;  font-size: 16px;  margin-top: 4px;}
 
 
 
