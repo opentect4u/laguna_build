@@ -435,6 +435,13 @@ color: #fff; border-radius: 3px; border: none;}
 .thumImgContainer .thumImgSm img{border: #ccc solid 1px; border-radius: 5px;}
 
 
+
+.resturentLeftLogo{max-width: 120px; width: 100%; margin: 0 auto 50px auto; overflow: hidden; border-radius: 77px; background: #fff;}
+/* .resturentLeftLogo img{} */
+
+.resturentLeftFooter{text-align: center;}
+.resturentLeftFooter p{font-size: 13px; color: #fff;}
+
 .thumImgContainer .thumImgSm .close {
     position: absolute;
     top: 2px;
