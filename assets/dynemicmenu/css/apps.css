@@ -254,12 +254,12 @@ width: 100%;
   font-size: 28px;
   margin-top: 23px !important;
   font-weight: 300;
-  font-style: italic;
-  background: rgba(0,0,0,.8);
+  font-style: bold;
+  /* background: rgba(0,0,0,.8); */
   max-width: 100%;
   padding: 12px;
   border-radius: 0;
-  font-family: 'Birthstone', cursive;}
+  font-family: Arial, Helvetica, sans-serif;}
 
 
   .modalCustomEvent{transition: opacity 200ms ease-in-out;transform: scale(0, 0); transition: .2s ease-in-out all;}
